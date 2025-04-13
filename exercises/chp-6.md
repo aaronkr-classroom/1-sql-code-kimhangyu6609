@@ -4,50 +4,29 @@
 **01 CREATE TABLE 명령문에서 속성의 제약 조건 설정을 위한 것이 아닌 것은?**
 
 1. CASCADE
-2. UNIQUE
-3. CHECK
-4. DEFAULT
 
 **02 다음 중 CREATE TABLE 구문으로 명세할 수 없는 것은?**
 
-1. 데이터 유형
-2. 외래키
-3. 대체키
 4. 인덱스
 
 **03 SOL 명령문 중 데이터 정의어 (DDL) 에 해당하는 것은?**
 
-1. REVOKE문
-2. SELECT문
 3. ALTER문
-4. GRANT문
 
 **04 SOL 명령문 중 데이터 제어어 (DCL) 에 해당하는 것은?**
 
 1. REVOKE문
-2. SELECT문
-3. ALTER문
-4. DROP TABLE문
 
 **05 사용자가 허가받은 권한을 다른 사용자에게도 부여할 수 있도록 허용하는 SOL문을 작성할 때 필요한명령어옵션은?**
 
-1. WITH ROLE OPTION
-2. WITH AUTHORITY OPTION
-3. WITH PUBLIC OPTION
 4. WITH GRANT OPTION
 
 **06 다음 SOL 관련 명령어 중 DCL과 가장 연관성이 낮은 것은?**
 
 1. EXEC
-2. REVOKE
-3. GRANT
-4. CREATE USER
 
 **07 다음 GRANT 구문 중 옳지 않은 것은?**
 
-1. GRANT INSERT, DELETE ON 학생 TO 홍길동 WITH GRANT OPTION
-2. GRANT UPDATE(점수) ON 수강 TO 홍길동
-3. GRANT ALL ON 학생 TO 홍길동
 4. GRANT FOREIGN KEY(소속학과명) ON 교수 TO 홍길동
 
 **08 다음 보기의 GRAN丁와 REVOKE 문장의 실행 결과는?**
@@ -57,24 +36,14 @@
 (ㄴ) GRANT SELECT ON 과목 TO 김 연 아 ; (‘홍길동 실행)
 (ㄷ) REVOKE SELECT ON 과목 FROM 홍길동 CASCADE ; ('root' 실행)
 ```
-
-1. 홍길동, 김연아 모두에게 권한이 있음
-2. 홍길동(SELECT 권한 있음), 김연아(SELECT 권한 없음)
-3. 홍길동(SELECT 권한 없음), 김연아(SELECT 권한 있음)
 4. 홍길동, 김연아모두에게 권한이 없음
 
 **09 부(view)에 대한 설명 중 옳지 않은 것은?**
 
-1. 뷰는또 다른뷰를통해 정의될 수 있다.
-2. CREATE VIEW SQL 명령을 실행함으로써 생성된다.
 3. 뷰는 가상 테이불이므로 데이터 변경은 불가능하다.
-4. 뷰는 둘 이상의 테이블간의 조안을 통해 정의될 수 있다.
 
 **10 뷰(view)에 대한 설명 중 옳지 않은 것은?**
 
-1. 데이터의 접근을 쉽게 제어하게 함으로써 보안을 제공한다.
-2. 논리적 데이터에 대한 독립성이 보장된다.
-3. 뷰가 정의된 기반 데이불이 삭제되면 뷰도 자동적으로 삭제된다.
 4. 하나 이상의 기반 테이불로부터 유도되어 만들어지는 실제 테이불이다.
 
 **11 뷰를 수정할 수 있는 경우는?**
